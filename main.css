@@ -1,0 +1,107 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    background-image:url('images/background.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.container h1{
+    font-size:5rem;
+    margin-bottom:.8em;
+    letter-spacing:.4rem;
+}
+
+.container .btn{
+    font-size:1.5rem;
+    padding:.5em 2.5em;
+    background-color:orangered;
+    border:none;
+    border-radius:.2em;
+    cursor:pointer;
+}
+
+.container .btn:hover{
+   filter:brightness(.5);
+}
+
+.active.container{
+    filter:blur(5px) brightness(.8);
+}
+
+.container-popup{
+    text-align:left;
+    padding:2em;
+    border-radius:.5em;
+    width:500px;
+    height:300px;
+    background-image:url('images/popup.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:1;
+    transition: all 700ms ease-in;
+}
+
+.container-popup i{
+    float:right;
+}
+
+.container-popup i:hover{
+    cursor:pointer;
+    color:orangered;
+}
+
+.container-popup form h2{
+    font-size:2.5rem;
+    color:blue;
+    margin-bottom:.3em;
+}
+
+.container-popup form label{
+    font-size:1.5rem;
+    color:blue;
+}
+
+.container-popup form .email{
+    width:100%;
+    font-size:1.5rem;
+    padding:.5em ;
+    text-align:center;
+    border:2px solid black;
+    margin-top:.5em;
+}
+
+.container-popup form .join{
+    width:100%;
+    font-size:1.5rem;
+    margin-top:.7em;
+    padding:.5em;
+    background-color:orangered;
+    border:2px solid black;
+    cursor:pointer;
+}
+
+.active.container-popup{
+    visibility:hidden;
+    opacity:0;
+    top:30%;
+}
